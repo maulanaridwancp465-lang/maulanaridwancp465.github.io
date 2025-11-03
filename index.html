@@ -1,77 +1,103 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV - Maulana Ridwan Cahyono Putra</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maulana Ridwan Cahyono Putra | Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="cv-container">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <div class="profile-photo">
-        <img src="profile.jpg" alt="Foto Profil">
-      </div>
-      <h2 class="name">Maulana Ridwan Cahyono Putra</h2>
-      <p class="title">Web Developer Junior</p>
 
-      <div class="section-title">My Contact</div>
-      <ul class="contact-info">
-        <li>📍 Malang, Indonesia</li>
-        <li>📞 +62 812-3456-7890</li>
-        <li>✉️ maulana.ridwan@example.com</li>
-        <li>🌐 www.maulanaridwan.dev</li>
-      </ul>
+  <!-- 🔹 Navigasi -->
+  <nav>
+    <ul>
+      <li><a href="#about">Tentang Saya</a></li>
+      <li><a href="#skills">Keahlian</a></li>
+      <li><a href="#education">Pendidikan</a></li>
+      <li><a href="#experience">Pengalaman</a></li>
+    </ul>
+  </nav>
 
-      <div class="section-title">My Skills</div>
-      <div class="skills">
-        <p>HTML & CSS</p>
-        <div class="bar"><span style="width: 90%"></span></div>
-        <p>JavaScript</p>
-        <div class="bar"><span style="width: 75%"></span></div>
-        <p>React JS</p>
-        <div class="bar"><span style="width: 70%"></span></div>
-        <p>Communication</p>
-        <div class="bar"><span style="width: 85%"></span></div>
-      </div>
-    </aside>
+  <!-- 🔹 Header -->
+  <header>
+    <img src="https://via.placeholder.com/150" alt="Foto Profil" class="profile-img">
+    <h1>Maulana Ridwan Cahyono Putra</h1>
+    <p>Web Developer Junior</p>
+  </header>
 
-    <!-- Main Content -->
-    <main class="content">
-      <section class="header">
-        <h1>Maulana <span>Ridwan</span></h1>
-        <h3>Web Developer Junior</h3>
-      </section>
+  <!-- 🔹 Tentang Saya -->
+  <section id="about">
+    <h2>👋 Tentang Saya</h2>
+    <p>
+      Saya seorang Web Developer Junior dengan minat besar di bidang pengembangan website modern dan interaktif.
+      Saya suka mempelajari hal baru dalam dunia pemrograman dan selalu berusaha meningkatkan keterampilan saya.
+    </p>
+    <ul class="contact-info">
+      <li>📍 Malang, Indonesia</li>
+      <li>📞 +62 812-3456-7890</li>
+      <li>📧 maulana.ridwan@example.com</li>
+      <li>🌐 www.maulanaridwan.dev</li>
+    </ul>
+  </section>
 
-      <section class="education">
-        <h2><span>🎓</span> Education Background</h2>
-        <div class="item">
-          <h3>Bachelor in Informatics Engineering</h3>
-          <p class="year">2019 - 2023 | <span>Universitas Muhammadiyah Malang</span></p>
-          <p>Memperoleh pengalaman dalam pengembangan web, algoritma, dan database.</p>
-        </div>
-        <div class="item">
-          <h3>SMA Negeri 1 Malang</h3>
-          <p class="year">2016 - 2019 | <span>Malang</span></p>
-          <p>Jurusan IPA dengan minat kuat di bidang teknologi dan desain.</p>
-        </div>
-      </section>
+  <!-- 🔹 Keahlian -->
+  <section id="skills">
+    <h2>💻 Keahlian</h2>
+    <div class="skills-container">
+      <div class="skill">HTML & CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React JS</div>
+      <div class="skill">Communication</div>
+    </div>
+  </section>
 
-      <section class="experience">
-        <h2><span>💼</span> Work Experience</h2>
-        <div class="item">
-          <h3>Web Developer Intern</h3>
-          <p class="year">Jan 2023 - Jun 2023 | <span>PT Teknologi Maju</span></p>
-          <p>Mengembangkan website perusahaan menggunakan HTML, CSS, dan JavaScript.</p>
-        </div>
-        <div class="item">
-          <h3>Freelance Web Developer</h3>
-          <p class="year">Jul 2023 - Sekarang | <span>Proyek Independen</span></p>
-          <p>Membuat aplikasi web interaktif untuk klien dengan React dan integrasi API.</p>
-        </div>
-      </section>
-    </main>
-  </div>
+  <!-- 🔹 Pendidikan -->
+  <section id="education">
+    <h2>🎓 Pendidikan</h2>
+    <div class="item">
+      <h3>Bachelor in Informatics Engineering</h3>
+      <p class="year">2019 - 2023 | Universitas Muhammadiyah Malang</p>
+      <p>Mempelajari pengembangan web, algoritma, dan basis data.</p>
+    </div>
+    <div class="item">
+      <h3>SMA Negeri 1 Malang</h3>
+      <p class="year">2016 - 2019 | Malang</p>
+      <p>Jurusan IPA dengan fokus pada teknologi dan desain.</p>
+    </div>
+  </section>
+
+  <!-- 🔹 Pengalaman -->
+  <section id="experience">
+    <h2>💼 Pengalaman Kerja</h2>
+    <div class="item">
+      <h3>Web Developer Intern</h3>
+      <p class="year">Jan 2023 - Jun 2023 | PT Teknologi Maju</p>
+      <p>Mengembangkan website perusahaan menggunakan HTML, CSS, dan JavaScript.</p>
+    </div>
+    <div class="item">
+      <h3>Freelance Web Developer</h3>
+      <p class="year">Jul 2023 - Sekarang | Proyek Independen</p>
+      <p>Membangun aplikasi web interaktif dengan React dan integrasi API.</p>
+    </div>
+  </section>
+
+  <!-- 🔹 Footer -->
+  <footer>
+    <p>© 2025 Maulana Ridwan Cahyono Putra | Dibuat dengan ❤️ dan semangat belajar</p>
+  </footer>
+
+  <!-- 🔹 JavaScript Animasi Scroll -->
+  <script>
+    const sections = document.querySelectorAll("section");
+
+    window.addEventListener("scroll", () => {
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          section.classList.add("visible");
+        }
+      });
+    });
+  </script>
 </body>
 </html>
