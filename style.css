@@ -1,4 +1,4 @@
-/* 🌙 Reset */
+/* 🌙 Reset & Font */
 * {
   margin: 0;
   padding: 0;
@@ -9,67 +9,105 @@
 body {
   background: linear-gradient(135deg, #1e1f29, #2c3e50);
   color: #fff;
-  line-height: 1.6;
   overflow-x: hidden;
+  line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
-/* 🔹 Navigasi */
+/* 🔹 Navbar */
 nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 15px 0;
-  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
   z-index: 1000;
+  backdrop-filter: blur(10px);
 }
 
-nav ul {
+nav .logo {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #00bcd4;
+}
+
+.nav-links {
   list-style: none;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 20px;
+.nav-links li {
+  display: inline-block;
+  margin-left: 20px;
 }
 
-nav a {
+.nav-links a {
   color: #fff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   transition: color 0.3s;
 }
 
-nav a:hover {
+.nav-links a:hover {
   color: #00bcd4;
 }
 
 /* 🔹 Header */
 header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 150px 20px 100px;
+  flex-direction: column;
+  background: radial-gradient(circle at top, #0d1117, #1e1f29);
 }
 
 .profile-img {
   width: 150px;
   border-radius: 50%;
-  border: 3px solid #00bcd4;
+  border: 4px solid #00bcd4;
+  margin-bottom: 15px;
+  transition: transform 0.4s;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
 }
 
 header h1 {
-  font-size: 2em;
-  margin-top: 10px;
   color: #00bcd4;
+  font-size: 2em;
+  margin: 10px 0;
 }
 
-header p {
-  font-size: 1.2em;
+.role {
   color: #ccc;
+  font-size: 1.1em;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  background: #00bcd4;
+  color: #111;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
 }
 
 /* 🔹 Section */
 section {
   padding: 100px 20px;
+  text-align: center;
   opacity: 0;
   transform: translateY(40px);
   transition: all 1s ease-out;
@@ -81,18 +119,34 @@ section.visible {
 }
 
 h2 {
-  color: #00bcd4;
   font-size: 1.8em;
+  color: #00bcd4;
   margin-bottom: 20px;
-  text-align: center;
 }
 
-/* 🔹 Skills */
+/* 🔹 Tentang Saya */
+#about p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  color: #ddd;
+}
+
+.contact-info {
+  list-style: none;
+  color: #ccc;
+}
+
+.contact-info li {
+  margin: 8px 0;
+}
+
+/* 🔹 Keahlian */
 .skills-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 15px;
+  margin-top: 20px;
 }
 
 .skill {
@@ -108,29 +162,34 @@ h2 {
   transform: scale(1.1);
 }
 
-/* 🔹 Items (Education & Experience) */
-.item {
-  background: rgba(255, 255, 255, 0.1);
-  margin: 15px auto;
-  padding: 20px;
-  border-radius: 10px;
+/* 🔹 Timeline */
+.timeline {
   max-width: 700px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.timeline-item {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  margin: 15px 0;
+  border-left: 4px solid #00bcd4;
+  border-radius: 8px;
   transition: transform 0.3s;
 }
 
-.item:hover {
+.timeline-item:hover {
   transform: translateY(-5px);
 }
 
-.item h3 {
+.timeline-item h3 {
   color: #fff;
-  margin-bottom: 10px;
 }
 
-.year {
+.timeline-item .year {
   color: #00bcd4;
   font-style: italic;
+  margin-bottom: 8px;
 }
 
 /* 🔹 Footer */
@@ -140,4 +199,26 @@ footer {
   padding: 20px;
   color: #aaa;
   font-size: 0.9em;
+  margin-top: 50px;
+}
+
+/* 🔹 Responsif */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links li {
+    display: block;
+    margin: 8px 0;
+  }
+
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  .btn {
+    font-size: 0.9em;
+  }
 }
